@@ -194,7 +194,6 @@ local rxp_xp12_enhancer = {
 
         -- Override Water:
         ['water/projector/displacement']        = { 0.0     , nil , 3 },-- 7.0      (v12.06)
-        ['water/wake_amp_ratio']                = { 1.0     , nil , 3 },-- 1.0      (v12.06)
         ['water/cascade_0_scale']               = { 2.0     , nil , 3 },-- 1.0      (v12.06) 
         ['water/cascade_1_scale']               = { 0.5     , nil , 3 },-- 1.0      (v12.06)
         ['water/cascade_2_scale']               = { 0.32    , nil , 3 },-- 1.0      (v12.06)
@@ -207,10 +206,7 @@ local rxp_xp12_enhancer = {
         ['water/spectrum/fetch_hi_m']           = { 10000.0 , nil , 3 },-- 5000.0   (v12.06)
         ['water/spectrum/fetch_lo_m']           = { 5000.0  , nil , 3 },-- 1000.0   (v12.06)
         ['water/spectrum/fetch_multiplier']     = { 20.0    , nil , 3 },-- 10.0     (v12.06)
-        -- ['water/enable_refraction']             = { nil     , nil , 3 },-- 0.0      (v12.06)
         ['water/enable_turbidity']              = { nil     , nil , 3 },-- 1.0      (v12.06)
-        -- ['water/turbidity']                     = { 0.1     , nil , 3 },-- 2.0      (v12.06)
-        -- ['water/turbidity/cutoff']              = { nil     , nil , 3 },-- -4.60517 (v12.06)
 
         -- Override Night Lighting:
         ['lights/photobb/hack_ev_hi']           = { 0       , nil , 4 },-- 15.0     (v12.06)
@@ -263,9 +259,6 @@ local rxp_xp12_enhancer = {
         ['cloud/extinction']                    = { 0.7     , nil , 7 },-- 0.5      (v12.06)
         ['cloud/noise_hi_limit']                = { 75000   , nil , 7 },-- 30000    (v12.06)
         ['cloud/temporal_alpha']                = { 0.32    , nil , 7 },-- 0.15     (v12.06)
-        -- ['new_clouds/shadow_blur_size']         = { 2.0     , nil , 7 },-- 1.0      (v12.06)
-        -- ['new_clouds/shadow_kill_blur']         = { 0.0     , nil , 7 },-- 1.0      (v12.06)
-        -- ['new_clouds/shadow_step_mtr']          = { 500.0   , nil , 7 },-- 500.0    (v12.06)
         ['new_clouds/density']                  = { 100.0   , nil , 7 },-- 125.0    (v12.06)
         ['new_clouds/march/samples_max']        = { 500.0   , nil , 7 },-- 500      (v12.06)
         ['new_clouds/march/samples_max_km']     = { 120.0   , nil , 7 },-- 60       (v12.06)
@@ -277,9 +270,6 @@ local rxp_xp12_enhancer = {
         ['new_clouds/high_freq_amp']            = { nil     , nil , 7 },-- 0.5      (v12.06)
         ['new_clouds/high_freq_rat']            = { nil     , nil , 7 },-- 7.3      (v12.06)
         ['new_clouds/low_freq_rat']             = { nil     , nil , 7 },-- 8.0      (v12.06)
-
-        -- ['new_clouds/ambient']                  = { 0.3     , nil , 7 },-- varying  (v12.06)
-        -- ['new_clouds/direct']                   = { 0.95    , nil , 7 },-- varying  (v12.06)
 
         ['shadow/lod_bias_adjust']              = { 6.0     , nil , 13},-- 1.0      (v12.09)
         ['shadow/total_fade_ratio']             = { 0.75    , nil , 13},-- 0.7      (v12.09)
@@ -1125,5 +1115,6 @@ create_command("RXP/Utility/Enhancer/toggle_window", "RXP Enhancer Window Toggle
 02AUG2024 (v1.9.6) [ColinM9991]: - Fixed:   Changed RCAS dataref for what I presume is the new one. 
                                             Remove several datarefs which no longer exist.
                                             Remove FXAA on MSAA option as X-Plane natively supports this now. 
+13AUG2024 (v1.9.7) [ColinM9991]: - Remove wake_amp_ratio for XP 12.1.2
 
 ]]--
