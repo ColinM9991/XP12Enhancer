@@ -34,9 +34,9 @@ if not SUPPORTS_FLOATING_WINDOWS then logMsg("ImgUI is not supported by your Fly
 local RXP_XP12E_DEBUG_DISABLE_ALL = 0
 
 local RXP_XP12E_WINDOW_TITLE = "Reality XP X-Plane 12 Enhancer"
-local RXP_XP12E_VERSION_NMBR = "v1.9.6" 
-local RXP_XP12E_XPL_VERS_MAX = 12110
-local RXP_XP12E_XPL_VERS_MIN = "12.1.1"
+local RXP_XP12E_VERSION_NMBR = "v1.9.7 - unofficial" 
+local RXP_XP12E_XPL_VERS_MAX = 12120
+local RXP_XP12E_XPL_VERS_MIN = "12.1.2"
 
 local rxp_xp12_enhancer = {
 
